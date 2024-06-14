@@ -5,34 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyCheatSheet</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.1.0/es5/tex-mml-chtml.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <style>
+        @media print {
+          body {
+             column-count: 2;
+             -webkit-column-count: 2;
+             -moz-column-count: 2;
+          }
+        }
+    </style>
 </head>
 <body>
-    <button id="downloadBtn">Télécharger PDF</button>
-    <div id="content">
-        <h1>Mathématique</h1>
-        <p>Voici une équation mathématique : \( E = mc^2 \)</p>
-        <p>Et une équation plus complexe : \( \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi} \)</p>
-    </div>
-    
-    
-    <script>
-        document.getElementById('downloadBtn').addEventListener('click', function () {
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
-
-            // Get the content of the div
-            const content = document.getElementById('content').innerHTML;
-
-            // Use html method to convert the content to PDF
-            doc.html(content, {
-                callback: function (doc) {
-                    doc.save('MyCheatSheet.pdf');
-                },
-                x: 10,
-                y: 10
-            });
-        });
-    </script>
+    <h1>Mathématique</h1>
+    <p>Voici une équation mathématique : \( E = mc^2 \)</p>
+    <p>Et une équation plus complexe : \( \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi} \)</p>
 </body>
 </html>
