@@ -32,7 +32,7 @@
         this.ref('id');
       });
   
-      return fetch("{{ '/search.json' | relative_url }}")
+      return fetch("{{ '/mycheatsheet/search.json' | relative_url }}")
         .then(function(response) {
           return response.json();
         })
