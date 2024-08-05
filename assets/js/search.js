@@ -30,6 +30,12 @@
         this.field('title');
         this.field('content');
         this.ref('id');
+        
+        // Ajout des documents à l'index
+        documents.forEach(function (doc) {
+          this.add(doc)
+        }, this)
+
       });
   
       return fetch('/mycheatsheet/search.json')
