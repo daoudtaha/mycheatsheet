@@ -10,4 +10,8 @@ title: "Recherche"
   <ul id="search-results"></ul>
 </form>
 
-<script src="{{ "/assets/js/search.js" | relative_url }}"></script>
+<!-- Include Lunr.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+
+<!-- Your custom script -->
+<script src="{{ '/assets/js/search.js' | relative_url }}"></script>

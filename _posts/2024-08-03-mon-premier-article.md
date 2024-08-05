@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Mon Premier Article"
+date: 2024-08-03
 ---
 
 # Mon Premier Article
