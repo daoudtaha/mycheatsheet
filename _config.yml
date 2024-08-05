@@ -1,0 +1,15 @@
+title: "Mon Site Jekyll"
+theme: minima
+plugins:
+  - jekyll-toc
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-lunr-js-search
+mathjax: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - search.md
