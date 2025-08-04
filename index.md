@@ -6,7 +6,7 @@ toc: true
 
 # Accueil
 
-Bienvenue sur mon site Jekyll !
+Bienvenue sur mon new site Jekyll !
 
 ## Sommaire
 
