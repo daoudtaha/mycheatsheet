@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Résumé d'Algèbre</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2cm;
+      line-height: 1.6;
+      column-count: 2;
+      column-gap: 2cm;
+    }
+    img {
+      display: block;
+      margin: 1em auto;
+      max-width: 100%;
+      height: auto;
+    }
+    h1, h2, h3 {
+      color: #000;
+      margin-top: 1em;
+      break-inside: avoid;
+    }
+    ul {
+      margin-left: 1em;
+      break-inside: avoid;
+    }
+    .section {
+      margin-bottom: 2em;
+      break-inside: avoid;
+    }
+    @media print {
+      body {
+        margin: 1cm;
+        column-count: 2;
+        column-gap: 2cm;
+      }
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+
+<h1 style="column-span: all;">Résumé d'Algèbre</h1>
+
+<img src="algebra-sheet.png" alt="Aperçu résumé algèbre" style="column-span: all;" />
+
+<div class="section">
+  <h2>1. Ensemble, Relation, Application</h2>
+
+  <h3>1.1 Ensemble opération sur les parties d’un ensemble</h3>
+  <ul>
+    <li>Inclusion : \( F \subseteq E = \{x \in E \mid x \in F\} \)</li>
+    <li>Complémentaire : \( \bar{A} = E \setminus A = \{x \in E \mid x \notin A\} \)</li>
+    <li>Intersection : \( A \cap B = \{x \in A \text{ et } x \in B\} \)</li>
+    <li>Réunion : \( A \cup B = \{x \in A \text{ ou } x \in B\} \)</li>
+    <li>Différence : \( A \setminus B = \{x \in A \text{ avec } x \notin B\} \)</li>
+    <li>Produit cartésien : \( E \times F = \{(x, y) \mid x \in E, y \in F\} \)</li>
+  </ul>
+
+  <h3>1.2 Application</h3>
+  <p>Soit \( f: E \rightarrow F \) application. Pour tout \( x \in E \), \( f(x) \) existe et est unique.</p>
+</div>
+
+<div class="section">
+  <h2>2. Entier naturel et Dénombrement</h2>
+
+  <h3>2.1 Ensemble fini</h3>
+  <ul>
+    <li>Cardinal : \( Card(E) = |E| \)</li>
+    <li>\( Card(E \cup F) = Card(E) + Card(F) - Card(E \cap F) \)</li>
+    <li>\( Card(E \setminus F) = Card(E) - Card(E \cap F) \)</li>
+    <li>\( Card(E^c) = Card(U) - Card(E) \)</li>
+  </ul>
+
+  <h3>2.2 Dénombrement</h3>
+  <ul>
+    <li>Arrangement : \( A_n^p = \frac{n!}{(n - p)!} \)</li>
+    <li>Combinaison : \( C_n^p = \frac{n!}{p!(n - p)!} \)</li>
+    <li>Formule du binôme : \( (a + b)^n = \sum_{k=0}^{n} C_n^k a^{n-k} b^k \)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>3. Structure algébrique</h2>
+
+  <h3>3.1 Groupes</h3>
+  <p>Un groupe est un ensemble muni d'une opération binaire \( * \) vérifiant :</p>
+  <ul>
+    <li>Commutativité : \( \forall x, y \in E, x * y = y * x \)</li>
+    <li>Associativité : \( \forall x, y, z \in E, (x * y) * z = x * (y * z) \)</li>
+    <li>Élément neutre \( e \) : \( \forall x \in E, x * e = e * x = x \)</li>
+    <li>Symétrique : \( \forall x \in E, \exists y \in E, x * y = y * x = e \)</li>
+  </ul>
+
+  <h3>3.2 Anneaux</h3>
+  <p>Un anneau \( (A, +, \cdot) \) est un ensemble muni de deux lois :</p>
+  <ul>
+    <li>\( (A, +) \) est un groupe abélien</li>
+    <li>\( \cdot \) est associative et distributive par rapport à \( + \)</li>
+    <li>Éventuellement, l'anneau admet un élément neutre pour \( \cdot \)</li>
+  </ul>
+</div>
+
+</body>
+</html>

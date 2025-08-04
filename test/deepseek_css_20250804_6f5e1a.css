@@ -1,0 +1,45 @@
+@page {
+    size: A4;
+    margin: 1cm;
+    
+    @bottom-center {
+        content: counter(page);
+        font-family: Arial;
+        font-size: 10pt;
+    }
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 1.4;
+    font-size: 11pt;
+}
+
+.container {
+    column-count: 2;
+    column-gap: 1cm;
+}
+
+h1, h2, h3 {
+    break-after: avoid;
+    break-inside: avoid;
+}
+
+.definition-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    break-inside: avoid;
+}
+
+.math {
+    font-size: 10.5pt;
+}
+
+/* Prevent breaking inside important elements */
+.subsection, .definition-box {
+    page-break-inside: avoid;
+}
+
+/* Add more print-specific styles as needed */

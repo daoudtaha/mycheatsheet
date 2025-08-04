@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: left; /* Changed from center to left */
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.definition-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.math {
+    font-size: 1.1em;
+    overflow-x: auto; /* For responsive math equations */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    
+    .definition-box {
+        padding: 10px;
+    }
+}

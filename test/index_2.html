@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résumé d'Analyse - Taha</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2cm;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 2cm;
+        }
+
+        .boxed {
+            border: 1px solid #333;
+            padding: 0.8em;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-bottom: 1em;
+        }
+
+        @media print {
+            body {
+                margin: 1cm;
+                column-count: 2;
+                column-gap: 2cm;
+            }
+
+            img {
+                page-break-before: always;
+                break-before: page;
+            }
+
+            @page {
+                margin: 1cm;
+                size: A4 portrait;
+                counter-increment: page;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0cm;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 0.8em;
+                color: gray;
+            }
+
+            .page-number::after {
+                content: "Page " counter(page);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="boxed">
+        <h1>Résumé Analyse - Trigonométrie, Logarithmes, Exponentielles</h1>
+        <p><strong>Auteur:</strong> Daoud Taha &nbsp;&nbsp; <strong>Classe:</strong> PT23 &nbsp;&nbsp; <strong>École:</strong> IPEIS</p>
+    </div>
+
+    <img src="algebra-page-1.jpeg" alt="Page 1 résumé" />
+    <img src="algebra-page-2.jpeg" alt="Page 2 résumé" />
+
+    <footer>
+        <div class="page-number"></div>
+    </footer>
+</body>
+</html>
